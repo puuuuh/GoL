@@ -1,0 +1,17 @@
+[package]
+edition = "2021"
+name = "life"
+version = "0.1.0"
+
+[dependencies]
+criterion = "*"
+kiam = "*"
+rand = "0.8"
+
+[dependencies.iced]
+features = ["canvas", "tokio"]
+version = "0.4"
+
+[[bench]]
+name = "field"
+harness = false
